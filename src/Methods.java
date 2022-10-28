@@ -46,7 +46,17 @@ public class Methods {
         }
         return count;
     }
-    String[] readFromFile(String filepath) throws IOException {
-        System.out.println("Not yet Implemented");
+
+    public static String[] readFromFile(String path) throws IOException {
+        // Reading File for String
+        List<String> input = new ArrayList<>();
+        BufferedReader b = new BufferedReader(new FileReader(path));
+        String z = b.readLine();
+        while (z != null) {
+            input.add(z);
+            z = b.readLine();
+        }
+        bf.close();
+        return input.toArray(new String[0]);
     }
 }
