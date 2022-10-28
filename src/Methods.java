@@ -56,18 +56,18 @@ public class Methods {
             input.add(z);
             z = b.readLine();
         }
-        bf.close();
+        b.close();
         return input.toArray(new String[0]);
     }
 
-    public static void writeToFile(String[] inputs) throws IOException {
+    public void writeToFile(String[] inputs) throws IOException {
         // Writing output to file.
         String oFN = writeToOutputFile();
         File outputFile = new File("./" + oFN);
         StringBuilder output = new StringBuilder();
         for (String line : inputs) {
             if (goodString(line))
-                output.append(this.getFreeUrinals(line)).append("\n");
+                output.append(this.countFreeUrinals(line)).append("\n");
         }
         Files.write(outputFile.toPath(), output.toString().getBytes());
         System.out.println("Output written to " + oFN);
