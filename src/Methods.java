@@ -14,4 +14,7 @@ public class Methods {
         }
         return pattern.matcher(s).find();
     }
+    public static int countFreeUrinals(String str) {
+        //Counts Max number of Urinals available
+        System.out.println("Not yet Implemented");
 }
