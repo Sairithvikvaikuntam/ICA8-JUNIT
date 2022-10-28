@@ -26,7 +26,7 @@ public class Urinals {
                         System.out.println("Invalid input");
                         continue;
                     }
-                    int count = urinals.getFreeUrinals(inputString);
+                    int count = urinals.countFreeUrinals(inputString);
                     System.out.print("Free urinals : " + count + "\n");
                 }
                 case "2" -> {
