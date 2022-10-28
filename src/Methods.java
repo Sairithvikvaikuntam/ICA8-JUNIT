@@ -59,4 +59,9 @@ public class Methods {
         bf.close();
         return input.toArray(new String[0]);
     }
+
+    public static void writeToFile(String[] inputs) throws IOException {
+        // Writing output to file.
+        System.out.println("Not yet Implemented")
+    }
 }

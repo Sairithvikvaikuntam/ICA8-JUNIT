@@ -105,4 +105,19 @@ public class urinalsTest {
             m.readFromFile(filePath);
         });
     }
+
+    @Test
+    void Test1writeToFile() {
+        System.out.println("======== Sai Rithvik Vaikuntam ======= writeToFileThree ======== TEST ONE EXECUTED - Exception ========");
+        assertThrows(Exception.class, () -> {
+            m.writeToFile(new String[]{"abc", "1001", "00000", "0000", "01000", "011"});
+        });
+    }
+
+    @Test
+    void Test2writeToFile() throws IOException {
+        System.out.println("====== Sai Rithvik Vaikunram == writeToFileFour == TEST TWO EXECUTED - Valid ========");
+        // does not throw any error
+        m.writeToFile(new String[]{"10001", "1001", "00000", "0000", "01000", "011"});
+    }
 }
