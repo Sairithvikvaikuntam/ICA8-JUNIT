@@ -38,37 +38,37 @@ public class urinalsTest {
     }
 
     @Test
-    void countFreeUrinalsOne() {
+    void Test1countFreeUrinals() {
         System.out.println("====== Sai Rithvik Vaikuntam == TEST ONE EXECUTED =======");
         assertEquals(1, urine.countFreeUrinals("10001"));
     }
 
     @Test
-    void countFreeUrinalsTwo() {
+    void Test2countFreeUrinals() {
         System.out.println("====== Sai Rithvik Vaikuntam == TEST TWO EXECUTED =======");
         assertEquals(0, urine.countFreeUrinals("1001"));
     }
 
     @Test
-    void countFreeUrinalsThree() {
+    void Test3countFreeUrinals() {
         System.out.println("====== Sai Rithvik Vaikuntam == TEST THREE EXECUTED =======");
         assertEquals(3, urine.countFreeUrinals("00000"));
     }
 
     @Test
-    void countFreeUrinalsFour() {
+    void Test4countFreeUrinals() {
         System.out.println("====== Sai Rithvik Vaikuntam == TEST FOUR EXECUTED =======");
         assertEquals(2, urine.countFreeUrinals("0000"));
     }
 
     @Test
-    void countFreeUrinalsFive() {
+    void Test5countFreeUrinals() {
         System.out.println("====== Sai Rithvik Vaikuntam == TEST FIVE EXECUTED =======");
         assertEquals(1, urine.countFreeUrinals("01000"));
     }
 
     @Test
-    void countFreeUrinalsSix() {
+    void Test6countFreeUrinals() {
         System.out.println("====== Sai Rithvik Vaikuntam == TEST SIX EXECUTED =======");
         assertEquals(-1, urine.countFreeUrinals("011"));
     }
