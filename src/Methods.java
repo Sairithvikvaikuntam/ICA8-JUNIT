@@ -62,6 +62,30 @@ public class Methods {
 
     public static void writeToFile(String[] inputs) throws IOException {
         // Writing output to file.
-        System.out.println("Not yet Implemented")
+        String oFN = writeToOutputFile();
+        File outputFile = new File("./" + oFN);
+        StringBuilder output = new StringBuilder();
+        for (String line : inputs) {
+            if (goodString(line))
+                output.append(this.getFreeUrinals(line)).append("\n");
+        }
+        Files.write(outputFile.toPath(), output.toString().getBytes());
+        System.out.println("Output written to " + oFN);
+    }
+
+    public static String writeToOutputFile() {
+        File f = new File("./rule.txt");
+        if (!f.exists()) return "rule.txt";
+        File fol = new File("./");
+        File[] files = fol.listFiles();
+        int count = 0;
+        assert files != null;
+        for (File x : files) {
+            if (x.isFile()) {
+                String fileName = x.getName();
+                if (fileName.contains("rule")) count ++;
+            }
+        }
+        return "rule" + count + ".txt";
     }
 }
