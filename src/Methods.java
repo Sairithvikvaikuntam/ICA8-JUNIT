@@ -6,6 +6,12 @@ import java.util.regex.Pattern;
 
 public class Methods {
     public static Boolean goodString(String s) {
-        System.out.println("Not yet Implemented");
+        if (s.trim().length() == 0)
+            return false;
+        Pattern pattern = Pattern.compile("^[0-1]*$");
+        if (!pattern.matcher(s).matches()) {
+            throw new NumberFormatException("Invalid string");
+        }
+        return pattern.matcher(s).find();
     }
 }
