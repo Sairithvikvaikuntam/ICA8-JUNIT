@@ -45,4 +45,8 @@ public class Methods {
             }
         }
         return count;
+    }
+    String[] readFromFile(String filepath) throws IOException {
+        System.out.println("Not yet Implemented");
+    }
 }
