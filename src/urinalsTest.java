@@ -4,17 +4,16 @@ import org.junit.jupiter.api.Test;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class urinalsTest {
     private Methods m;
 
     @BeforeEach
     public void setMethods() {
-        
+
         m = new Methods();
-        
+
     }
 
     @Test

@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -10,7 +11,7 @@ import java.util.Scanner;
 
 
 public class Urinals {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, IOException {
         Methods urinals = new Methods();
         while (true) {
             System.out.println("\n===========");
